@@ -1,6 +1,7 @@
 # FiPy-DFT 
---
+
 A simple and easy to modify Density Functional Theory (DFT) code built on top of the finite volume package [FiPy](http://www.ctcms.nist.gov/fipy/).
+
 ### An Overview ###
 
 This is not a fast DFT code nor is it particularly accurate. What is it? It is a very easy to modify code. Of the common theoretical features in electronic structure code, basically none are implemented. This is deliberate. With nothing implemented, there less structural barriers to implementing something new. With that in mind, it is easier to describe what is implemented rather than what is not.
