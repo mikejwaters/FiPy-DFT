@@ -1,5 +1,5 @@
 
-#License: if you do something cool with this, please cite me, Michael Waters.
+
 
 
 lz = 3.0 # Ang
@@ -136,7 +136,11 @@ if m4comm.Get_rank() == 0:
 
 ############## set initial applied potential
 if m4comm.Get_rank() == 0: print "Setting Core Potentials"
-atomic_data=loadtxt('input.xyz')
+atomic_data=loadtxt('input.xyz') 
+###this file has  the format
+# atomic_number x y z
+# e.g. carbon at some coordinates:
+# 6 1.0 2.1 1.1
 for i in range(atomic_data.shape[0]):
 
 	Z = atomic_data[i][0]
