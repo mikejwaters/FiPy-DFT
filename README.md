@@ -9,7 +9,7 @@ This is not a fast DFT code nor is it particularly accurate. What is it? It is a
 * The effective single particle Hamiltonian contains only the Coulomb attraction to nuclear cores and repulsion from the total electron density.
 * All electrons are treated explicitly. Spin up and down electrons are simply orthonormalized separately but otherwise treated equally. 
 * Wave functions and energy eigenvalues are calculated using self-consistent iteration with mixing between old and new wave function solutions for improved  numerical stability. 
-* The code does not use basis sets in the traditional sense but instead uses a tessellated finite volume mesh as a 'basis'. Currently, it's just a regular 3D grid. This removes a theoretical complexity from the code. For all systems, regardless of Hamiltonian, a mesh only needs to be fine enough for the desired energy accuracy. 
+* The code does not use basis sets in the traditional sense, but instead uses a tessellated finite volume mesh as a 'basis'. Currently, it's just a regular 3D grid. This removes a theoretical complexity from the code. For all systems, regardless of Hamiltonian, a mesh only needs to be fine enough for the desired energy accuracy. 
 * Previous results are saved, and attempts are made to restart previous calculations.
 * Can be run in parallel using MPI with the PyTrilinos backend for FiPy.
 
