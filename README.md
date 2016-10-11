@@ -17,15 +17,15 @@ This is not a fast DFT code nor is it particularly accurate. What is it? It is a
 
 To run, simply execute the python script:
 
-   $ python fipy-dft.py
+    $ python fipy-dft.py
    
 To run in parallel on 4 cores:
   
-   $ mpirun -np 4 python fipy-dft.py
+    $ mpirun -np 4 python fipy-dft.py
 
 To run in parallel on all cores:
 
-   $ mpirun -np $(nproc) python fipy-dft.py
+    $ mpirun -np $(nproc) python fipy-dft.py
 
 ### Issues ###
 
