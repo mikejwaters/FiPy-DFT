@@ -12,6 +12,19 @@ This is not a fast DFT code nor is it particularly accurate. What is it? It is a
 * The code does not use basis sets in the traditional sense but instead uses a tessellated finite volume mesh as a 'basis'. Currently, it's just a regular 3D grid. This removes a theoretical complexity from the code. For all systems, regardless of Hamiltonian, a mesh only needs to be fine enough for the desired energy accuracy. 
 * Previous results are saved, and attempts are made to restart previous calculations.
 * Can be run in parallel using MPI with the PyTrilinos backend for FiPy.
+### Running ###
+
+To run, simply execute the python script:
+
+   $ python fipy-dft.py
+   
+To run in parallel on 4 cores:
+  
+   $ mpirun -np 4 python fipy-dft.py
+
+To run in parallel on all cores:
+
+   $ mpirun -np $(nproc) python fipy-dft.py
 
 ### Issues ###
 
